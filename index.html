@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Decodificador Alura</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./src/img/logo_alura.svg" alt="Logo da Alura" class="logo-alura">
+    </header>
+
+    <main class="main">
+        <div>
+            <textarea name="decodificador" id="decodificador-de-texto" class="text-area" cols="100" rows="30" placeholder="Insira seu texto." required></textarea>
+            <p>
+            <img src="./src/img/attention-icon.svg" alt="Ícone de atenção">
+            Apenas letras minúsculas e sem acento.
+            </p>
+                <div class="main-btn">
+                    <input type="button" value="Criptografar" class="btn-criptografar">
+                    <input type="button" value="Descriptografar" class="btn-descriptografar">
+                </div>
+        </div>
+
+        <div class="output-screen-1">
+            <img src="./src/img/banner.svg" alt="Tela de resultado">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+        <div class="output-screen-2">
+            <textarea name="text-area-2" id="text-area-2" cols="30" rows="10" class="text-area-2" readonly style="text-align: center; padding: 1.4em;"></textarea>
+            <input type="button" name="botao-de-copiar" id="botao-de-copiar" value="Copiar">
+        </div>
+    </main>
+
+    <footer>
+        <p>Feito por Cleyson Oliveira</p>
+        <a href="https://www.linkedin.com/in/cleysonoliveira/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/CleysonOlvr" target="_blank">GitHub</a>
+    </footer>
+</body>
+<script src="./src/js/main.js"></script>
+</html>
