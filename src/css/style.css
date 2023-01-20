@@ -18,13 +18,14 @@ header img {
 
 .main p {
     text-align: center;
+    background-color: transparent;
 }
 
 .text-area {
     margin: 80px;
 }
 
-.output-screen-1 {
+.output {
     height: 800px;
     margin-top: -40px;
     padding: 150px 35px;
@@ -34,12 +35,8 @@ header img {
     text-align: center;
 }
 
-.output-screen-1 img, h2 {
+.output img, h2, p {
     margin-bottom: 32px;
-    background-color: #FCFAF9;
-}
-
-.output-screen-1 p {
     background-color: #FCFAF9;
 }
 
@@ -89,4 +86,8 @@ header img {
 
 footer {
     margin-left: 35px;
+}
+
+footer p {
+    background-color: transparent;
 }

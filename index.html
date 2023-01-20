@@ -16,26 +16,33 @@
     </header>
 
     <main class="main">
-        <div>
-            <textarea name="decodificador" id="decodificador-de-texto" class="text-area" cols="100" rows="30" placeholder="Insira seu texto." required></textarea>
-            <p>
-            <img src="./src/img/attention-icon.svg" alt="Ícone de atenção">
-            Apenas letras minúsculas e sem acento.
-            </p>
+        <div class="container-input">
+            <div class="input">
+                <textarea name="decodificador" id="decodificador-de-texto" class="text-area" cols="100" rows="30" placeholder="Insira seu texto." required></textarea>
+                <p>
+                <img src="./src/img/attention-icon.svg" alt="Ícone de atenção">
+                Apenas letras minúsculas e sem acento.
+                </p>
+            </div>
                 <div class="main-btn">
-                    <input type="button" value="Criptografar" class="btn-criptografar">
-                    <input type="button" value="Descriptografar" class="btn-descriptografar">
+                    <button
+                    class="btn-criptografar"
+                    onclick="criptografar()">
+                    Criptografar
+                    </button>
+                    
+                    <button
+                    class="btn-descriptografar"
+                    onclick="descriptografar()">
+                    Descriptografar
+                    </button>
                 </div>
         </div>
 
-        <div class="output-screen-1">
+        <div class="output" id="output">
             <img src="./src/img/banner.svg" alt="Tela de resultado">
             <h2>Nenhuma mensagem encontrada</h2>
             <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-        </div>
-        <div class="output-screen-2">
-            <textarea name="text-area-2" id="text-area-2" cols="30" rows="10" class="text-area-2" readonly style="text-align: center; padding: 1.4em;"></textarea>
-            <input type="button" name="botao-de-copiar" id="botao-de-copiar" value="Copiar">
         </div>
     </main>
 
@@ -44,6 +51,6 @@
         <a href="https://www.linkedin.com/in/cleysonoliveira/" target="_blank">LinkedIn</a>
         <a href="https://github.com/CleysonOlvr" target="_blank">GitHub</a>
     </footer>
+    <script src="/src/js/main.js"></script>
 </body>
-<script src="./src/js/main.js"></script>
 </html>
