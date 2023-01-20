@@ -6,7 +6,7 @@ function criptografar() {
 
     var resultCripto = texto.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
 
-    document.getElementById('output').innerHTML = '<textarea readonly id="decodificador-de-texto">' + resultCripto + '</textarea>'+ '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>';
+    document.getElementById('output').innerHTML = '<textarea readonly id="output-text">' + resultCripto + '</textarea>'+ '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>';
 }
 
 function descriptografar() {
@@ -16,4 +16,11 @@ function descriptografar() {
 
     document.getElementById('output').innerHTML = '<textarea readonly id="input-texto">' + resultDescripto + 
     '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+}
+
+function copiar() {
+    var textoCopy = document.getElementById('output-text');
+    textoCopy.select();
+    document.execCommand('copy');
+    alert("Texto copiado!");
 }
