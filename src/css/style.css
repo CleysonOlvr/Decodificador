@@ -152,3 +152,62 @@ footer a {
 footer a:nth-child(2) {
     color: rgb(0, 98, 255);
 }
+
+@media screen and (max-width: 1700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 85vw;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 85vw;
+    }
+
+    header {
+        display: block;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #output {
+        height: 400px;
+        align-self: center;
+        margin-top: 40px;
+        background-color: #FFFFFF;
+    }
+
+    #output img, h2, p {
+        background-color: transparent;
+    }
+
+    .btn-copiar {
+        position: relative;
+        margin-top: 270px;
+    }
+
+    @media screen and (max-width: 980px) {
+        .container-input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 20px;
+        }
+
+        .container-input textarea {
+            width: fit-content;
+        }
+
+        #decodificador-de-texto.textarea {
+            max-width: 80%;
+        }
+    }
+}
